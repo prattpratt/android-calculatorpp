@@ -24,11 +24,11 @@ allprojects {
         }
 
         if (!project.hasProperty("ossrhUsername")) {
-            ext.ossrhUsername = "no-username"
+            project.ext.ossrhUsername = "no-username"
         }
 
         if (!project.hasProperty("ossrhPassword")) {
-            ext.ossrhPassword = "no-password"
+            project.ext.ossrhPassword = "no-password"
         }
     }
 }

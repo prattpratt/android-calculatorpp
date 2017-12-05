@@ -246,9 +246,7 @@ public final class App {
     }
 
     public static void restartActivity(@Nonnull Activity activity) {
-        final Intent intent = activity.getIntent();
-        activity.finish();
-        activity.startActivity(intent);
+        activity.recreate();
     }
 
     /**
